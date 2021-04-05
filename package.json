@@ -1,0 +1,25 @@
+{
+  "name": "monitor-sdk",
+  "version": "1.0.0",
+  "description": "a performance monitoring SDK",
+  "main": "dist/minitor-sdk.js",
+  "source": "src/index.ts",
+  "module": "dist/minitor-sdk.module.js",
+  "types": "dist/typings/index.d.ts",
+  "unpkg": "dist/minitor-sdk.umd.js",
+  "scripts": {
+    "build": "microbundle",
+    "dev": "microbundle watch",
+    "api:init": "api-extractor init",
+    "api:doc": "typedoc --out docs src",
+    "api:run": "api-extractor run --local --verbose"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@microsoft/api-extractor": "^7.13.2",
+    "microbundle": "^0.13.0",
+    "typedoc": "^0.20.35"
+  }
+}
