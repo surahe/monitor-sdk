@@ -10,6 +10,7 @@
   "scripts": {
     "build": "microbundle",
     "dev": "microbundle watch",
+    "example:run": "parcel  examples/index.html",
     "api:init": "api-extractor init",
     "api:doc": "typedoc --out docs src",
     "api:run": "api-extractor run --local --verbose"
@@ -18,6 +19,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "parcel-bundler": "^1.12.4",
     "@microsoft/api-extractor": "^7.13.2",
     "microbundle": "^0.13.0",
     "typedoc": "^0.20.35"
